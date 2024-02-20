@@ -1,0 +1,15 @@
+// how to check whether a given number is a power of 2 .
+class Solution {
+  
+    public boolean isPowerOfTwo(int n) {
+       for (int i = 0; i < 31; i++) {
+// reason why loop is running till 31 because integers are represented using 32 bits, and the maximum power of 2 that can be represented within 32 bits is 2^31
+
+            int ans = (int) Math.pow(2, i);
+            if (ans == n) {
+                return true;
+            }
+        }
+        return false; 
+    }
+}
