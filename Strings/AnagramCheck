@@ -1,0 +1,26 @@
+public class Strings {
+public void anagram()
+    {
+    String s="listen";
+    String s1="silent";
+   char []c =s.toCharArray();
+   char []c1=s1.toCharArray();
+   if(c.length!=c1.length)
+   {
+       System.out.println("Not anagram");
+   }
+   else
+   {
+       Arrays.sort(c);
+       Arrays.sort(c1);
+       if(Arrays.equals(c,c1)==true)
+       {
+           System.out.println(" anagram");
+       }
+       else
+       {
+           System.out.println("Not anagram");
+       }
+   }
+}
+    }
