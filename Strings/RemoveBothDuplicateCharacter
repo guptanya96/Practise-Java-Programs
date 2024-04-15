@@ -1,0 +1,29 @@
+@Test
+    //remove both duplicate characters
+    public void RemoveBothDuplicateCharacter()
+     {
+         String s = "tanya";
+         char[] ch= s.toCharArray();
+         Map<Character,Integer> mp = new HashMap<>();
+         for(int i=0;i<ch.length;i++)
+         {
+             if(mp.containsKey(ch[i]))
+             {
+                 mp.put((ch[i]),mp.get(ch[i])+1);
+             }
+             else
+             {
+                 mp.put(ch[i],1);
+             }
+         }
+         for(Map.Entry<Character, Integer> e: mp.entrySet())
+         {
+             if(e.getValue()==1)
+             {
+                 System.out.print(e.getKey());
+             }
+         }
+
+     }
+
+Output: tyn
