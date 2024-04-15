@@ -1,0 +1,14 @@
+@Test
+    //get length without length function
+    public void getlen()
+    {
+        String s="hello"; int length=0;
+        char ch[]=s.toCharArray();
+        for (char q:ch)
+        {
+            length++;
+        }
+        System.out.println(" New length "+length);
+    }
+
+Output: New length 5
