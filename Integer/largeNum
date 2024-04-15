@@ -1,0 +1,24 @@
+@Test
+    //get largest number in array
+    public void largeNum()
+    {
+        int a[]={1,4,2,7,10,6};
+        Arrays.sort(a);
+        System.out.println(a[a.length-1]);
+        int large=a[0]; int small=a[0];
+        for(int i=1;i<a.length;i++)
+        {
+            if(a[i]>large)
+            {
+                large=a[i];
+            }
+            else
+            {
+                small=a[i];
+            }
+
+        }
+        System.out.println(large+ " "+small);
+    }
+Output:10
+10 1
