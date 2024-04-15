@@ -1,0 +1,9 @@
+  @Test
+    //extract last 4 chars
+    public void extractLast4CharactersOfString()
+        {
+            String s= "missisippie";
+                System.out.print(s.substring(s.length()-4));
+            }
+
+Output: ppie
