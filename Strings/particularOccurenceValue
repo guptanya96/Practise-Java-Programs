@@ -1,0 +1,17 @@
+@Test
+    //count particular char occurence
+    public void particularOccurence()
+    {
+        String s= "missisipie";
+        char c='i'; int count=0;
+        for(int i=0;i<s.length();i++)
+        {
+            char ch=s.charAt(i);
+            if(ch==c)
+            {
+                count++;
+            }
+        }
+        System.out.println("Occurence of "+c+" is : "+count);
+    }
+Output: Occurence of i is : 4
