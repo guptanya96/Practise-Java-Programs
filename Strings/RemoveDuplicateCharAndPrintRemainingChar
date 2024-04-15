@@ -1,0 +1,14 @@
+@Test
+    //remove only duplicate characters
+    public void RemoveDuplicateCharAndPrintRemainingChar()
+    {
+        char[] s = "tanya".toCharArray();
+        Set<String> s1= new HashSet<>();
+        for(int i =0;i<s.length;i++)
+        {
+            s1.add(String.valueOf(s[i]));
+        }
+        System.out.print(s1);
+    }
+
+Output: [a, t, y, n]
