@@ -1,0 +1,80 @@
+@Test
+    //print all subsstring
+    public void allSubs()
+     {
+         String s= "missisippie";
+         for(int i=0;i<s.length();i++)
+         {
+             for(int j=i+1;j<=s.length();j++)
+             {
+                 System.out.println(s.substring(i,j));
+             }
+         }
+     }
+
+Output: m
+mi
+mis
+miss
+missi
+missis
+missisi
+missisip
+missisipp
+missisippi
+missisippie
+i
+is
+iss
+issi
+issis
+issisi
+issisip
+issisipp
+issisippi
+issisippie
+s
+ss
+ssi
+ssis
+ssisi
+ssisip
+ssisipp
+ssisippi
+ssisippie
+s
+si
+sis
+sisi
+sisip
+sisipp
+sisippi
+sisippie
+i
+is
+isi
+isip
+isipp
+isippi
+isippie
+s
+si
+sip
+sipp
+sippi
+sippie
+i
+ip
+ipp
+ippi
+ippie
+p
+pp
+ppi
+ppie
+p
+pi
+pie
+i
+ie
+e
