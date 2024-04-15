@@ -1,0 +1,27 @@
+@Test
+    //reverse string preserving spaces
+    public void revStringwithSpace()
+    {
+        String s = "hi my name is tanya";
+        int n = s.length();
+        char ch[]= s.toCharArray();
+        int start=0; int end=n-1;
+        while(start<end) {
+            if (ch[start] == ' ') {
+                start++;
+                continue;
+            } else if (ch[end] == ' ') {
+                end--;
+                continue;
+            } else {
+                char temp = ch[start];
+                ch[start] = ch[end];
+                ch[end] = temp;
+                start++;
+                end--;
+            }
+        }
+        System.out.println(String.valueOf(ch));
+    }
+
+Output: ay na tsie ma nymih
