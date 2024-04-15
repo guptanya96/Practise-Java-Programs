@@ -1,0 +1,30 @@
+ @Test
+    //sorting using 2 pointers
+
+    public void sortUsing2Point()
+    {
+        int inputArray[] = {5, 2, 3, 7, 8};
+        int left=0;
+        int right = 1;
+        while(right<inputArray.length)
+        {
+        if(inputArray[left]>inputArray[right]) //5,2
+        {
+            int temp = inputArray[left];
+            inputArray[left] = inputArray[right];
+            inputArray[right] = temp;
+            left++;
+            right++;
+        }
+        else
+        {
+            left++;
+            right++;
+        }
+        }
+        for (int i=0;i<inputArray.length;i++)
+        {
+            System.out.print(inputArray[i]+" ");
+        }
+    }
+Output:2 3 5 7 8 
