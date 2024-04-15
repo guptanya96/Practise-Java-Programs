@@ -1,0 +1,16 @@
+@Test
+    //left and right rotation
+    public void stringRight()
+    {
+        String s = "Stackoverflow";
+        int leftRot=2; //output to be ackoverflowSt
+        int rightRot=2; //output to be owStackoverfl
+
+        String left= s.substring(leftRot) +  s.substring(0,leftRot);
+        System.out.println(left);
+        String right = s.substring(s.length()-rightRot)+s.substring(0,s.length()-rightRot);
+        System.out.println(right);
+        }
+
+Output: ackoverflowSt
+owStackoverfl
