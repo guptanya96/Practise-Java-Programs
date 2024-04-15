@@ -1,0 +1,30 @@
+ @Test
+    //occurence of all char in string
+    public void occuMap()
+        {
+            String s= "missisippie";
+            char[] ch= s.toCharArray();
+            Map<Character,Integer> mp = new HashMap<>();
+            for(int i=0;i<ch.length;i++)
+            {
+                if(mp.containsKey(ch[i]))
+                {
+                   mp.put((ch[i]),mp.get(ch[i])+1);
+                }
+                else
+                {
+                    mp.put(ch[i],1);
+                }
+            }
+            System.out.println(mp);
+            for(Map.Entry e: mp.entrySet())
+            {
+                System.out.println("Occurence of "+e.getKey()+" is "+ e.getValue());
+            }
+        }
+Output: {p=2, s=3, e=1, i=4, m=1}
+Occurence of p is 2
+Occurence of s is 3
+Occurence of e is 1
+Occurence of i is 4
+Occurence of m is 1
