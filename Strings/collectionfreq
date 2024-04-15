@@ -1,0 +1,45 @@
+// get min and max occurence value and key
+@Test
+    public void collectionfreq()
+    {
+        String s[]= "hello tanya hello is tanya ".split(" ");
+        Map<String,Integer> hm = new HashMap<String, Integer>();
+        for(String a:s)
+        {
+            if(hm.get(a)!=null)
+            {
+                hm.put(a,hm.get(a)+1);
+            }
+            else
+            {
+                hm.put(a,1);
+            }
+        }
+        System.out.print(hm);
+        String minOccurrenceKey = s[0];
+        int minOccurrenceValue = hm.get(s[0]);
+        String maxOccurrenceKey = s[0];
+        int maxOccurrenceValue = hm.get(s[0]);
+
+        for (Map.Entry<String, Integer> entry : hm.entrySet()) {
+            String key = entry.getKey();
+            int value = entry.getValue();
+
+            if (value < minOccurrenceValue) {
+                minOccurrenceValue = value;
+                minOccurrenceKey = key;
+            }
+
+            if (value > maxOccurrenceValue) {
+                maxOccurrenceValue = value;
+                maxOccurrenceKey = key;
+            }
+        }
+
+        System.out.println("Min Occurrence: Key = " + minOccurrenceKey + ", Value = " + minOccurrenceValue);
+        System.out.println("Max Occurrence: Key = " + maxOccurrenceKey + ", Value = " + maxOccurrenceValue);
+
+    }
+
+output:{tanya=2, is=1, hello=2}Min Occurrence: Key = is, Value = 1
+Max Occurrence: Key = hello, Value = 2
