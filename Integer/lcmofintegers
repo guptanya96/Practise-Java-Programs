@@ -1,0 +1,16 @@
+ @Test
+    public void lcm() {
+        int a = 10;
+        int b = 30;  //a=2*5 b=2*3*5 lcm=2*3*5=30
+        int lcm = 1;
+        int gcd = 0;
+        for (int i = 1; i <= a && i <= b; i++) {
+            if (a % i == 0 && b % i == 0) {
+                gcd = i;
+            }
+        }
+        lcm = a * b / gcd;
+
+        System.out.print(lcm);
+    }
+Output:30
