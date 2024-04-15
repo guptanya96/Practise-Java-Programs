@@ -1,0 +1,16 @@
+@Test
+    //print fibonacci
+    public void fibo()
+    {
+        int a=0;int b=1; int c=4;
+        System.out.print(a+" "+b+" ");
+        for(int i=0;i<c;i++)
+        {
+            int d=a+b;
+            System.out.print(d+" ");
+            a=b;
+            b=d;
+        }
+    }
+
+    Output:0 1 1 2 3 5 
