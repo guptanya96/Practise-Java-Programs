@@ -1,0 +1,26 @@
+ @Test
+    //moving 0s to the end while maintaining order of array
+
+    public void move0toEndUsing2pointer() {
+        int[] inputArray = {1, 2, 3, 0, 5, 0, 4, 0, 8};
+        int left = 0;
+        int right = 0;
+        while(right<inputArray.length) {
+            if (inputArray[right] == 0) {
+                right++;
+            } else
+        {
+                int temp = inputArray[left];
+                inputArray[left] = inputArray[right];
+                inputArray[right] = temp;
+                left++;
+                right++;
+            }
+
+        }
+        for (int i=0;i<inputArray.length;i++)
+        {
+            System.out.print(inputArray[i]+" ");
+        }
+    }
+Output:1 2 3 5 4 8 0 0 0 
