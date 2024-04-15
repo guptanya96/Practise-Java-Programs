@@ -1,0 +1,30 @@
+ @Test
+    //find max and min diff
+    public void differenceBtwMaxMin() {
+
+Method1:
+
+        Integer a[] = {1, 2, 3, 4, 5, 6, 7, 8};
+        List<Integer> li= Arrays.asList(a);
+       System.out.println("Max: " + Collections.max(li));
+        System.out.println("Min: " +  Collections.min(li));
+
+
+Method2:
+
+        int a[]={1, 2, 3, 4, 5, 6, 7, 8};
+        int min = a[0];
+        int max = a[0];
+
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] > max) {
+                max = a[i];
+            } else {
+                min = a[i];
+            }
+        }
+
+        System.out.println("Difference between Max and Min: " + (max - min));
+    }
+
+Output:Difference between Max and Min: 7
