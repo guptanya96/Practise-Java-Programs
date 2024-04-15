@@ -1,0 +1,14 @@
+@Test
+    //Copy Elements To AnotherArray
+    public void CopyElementsToAnotherArray() {
+        int a[] = {1, 3, 2, 5};
+        int b[] = new int[a.length];
+        for (int i = 0; i < a.length; i++) {
+            b[i] = b[i] + a[i];
+        }
+        for (int i = 0; i < b.length; i++) {
+            System.out.print(b[i]);
+        }
+
+    }
+Output:1325
