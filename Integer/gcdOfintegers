@@ -1,0 +1,16 @@
+@Test
+    public void gcd()
+    {
+        int a=10;int b =30; //a=2*5 b=2*3*5 gcd=2*5=10
+        int gcd=0;
+        for(int i=2;i<=a&&i<=b;i++)
+        {
+            if(a%i==0 && b%i==0)
+            {
+                gcd=i;
+            }
+        }
+        System.out.print(gcd);
+    }
+
+Output:10
