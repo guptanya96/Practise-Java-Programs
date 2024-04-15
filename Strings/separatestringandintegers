@@ -1,0 +1,22 @@
+@Test  //to only get numeric and string from string
+    public void checkNumeric()
+    {
+        String s="124sad2"; String s1=""; String s2="";
+        for(int i=0;i<s.length();i++)
+        {
+            char ch=s.charAt(i);
+            if(Character.isDigit(ch))
+            {
+                s1=s1+ch;
+            }
+            else
+            {
+                s2=s2+ch;
+            }
+        }
+        System.out.print("Only digits: "+s1+" Only alphabest : "+s2);
+    }
+
+
+Output:
+Only digits: 1242 Only alphabest : sad
