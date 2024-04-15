@@ -1,0 +1,10 @@
+ @Test
+    //reverse an array
+    public void reverseArray() {
+        int[] arr = {4, 2, 3, 5, 1, 2};
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+
+Output:2 1 5 3 2 4 
