@@ -1,0 +1,45 @@
+@Test
+    public void getOccurence()
+    {
+        String s="missisiipe is my home".replaceAll(" ","");
+
+        char[] ch= s.toCharArray();
+        System.out.print(ch.length);
+        Map<Character,Integer> hm = new HashMap<Character, Integer>();
+        for(char c:ch)
+        {
+            if(hm.get(c)!=null)
+            {
+                hm.put(c,hm.get(c)+1);
+            }
+            else
+            {
+                hm.put(c,1);
+            }
+        }
+        System.out.print(hm);
+        char minOccurrenceKey = 0;
+        int minOccurrenceValue = hm.get(ch[0]);
+        char maxOccurrenceKey = 0;
+        int maxOccurrenceValue = hm.get(ch[0]);
+        for (Map.Entry<Character, Integer> entry : hm.entrySet()) {
+            char key = entry.getKey();
+            int value = entry.getValue();
+
+            if (value < minOccurrenceValue) {
+                minOccurrenceValue = value;
+                minOccurrenceKey = key;
+            }
+
+            if (value > maxOccurrenceValue) {
+                maxOccurrenceValue = value;
+                maxOccurrenceKey = key;
+            }
+        }
+
+        System.out.println("Min Occurrence: Key = " + minOccurrenceKey + ", Value = " + minOccurrenceValue);
+        System.out.println("Max Occurrence: Key = " + maxOccurrenceKey + ", Value = " + maxOccurrenceValue);
+    }
+
+Output:18{p=1, s=4, e=2, h=1, i=5, y=1, m=3, o=1}Min Occurrence: Key = p, Value = 1
+Max Occurrence: Key = i, Value = 5
