@@ -1,0 +1,29 @@
+ @Test
+    //string compression or replace duplicate char with their occurence number
+    public void StringCompress()
+    {
+        String value="aaabbccdddde";
+
+        HashMap<Character,Integer> map=new HashMap<>();
+        
+        for(int i=0;i<value.length();i++)
+        {
+            if(map.containsKey(value.charAt(i)))
+            {
+                int count= map.get(value.charAt(i));
+                count++;
+                map.replace(value.charAt(i),count);
+            }
+            else
+            {
+                map.put(value.charAt(i),1);
+            }
+        }
+        for(Map.Entry e: map.entrySet())
+        {
+            System.out.print(e.getKey()+""+e.getValue());
+        }
+    }
+
+
+Output: a3b2c2d4e1
