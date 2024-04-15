@@ -1,0 +1,16 @@
+@Test
+    //Reverse number
+    public void reverse()
+    {
+        int x=32;
+        int rev=0;
+        while(x>0)
+        {
+            int q=x%10;
+            rev=(rev*10)+q;
+            x=x/10;
+        }
+        System.out.print("Reverse: "+rev);
+    }
+
+Output:Reverse: 23
