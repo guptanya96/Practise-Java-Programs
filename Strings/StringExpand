@@ -1,0 +1,22 @@
+@Test
+    //expand string basis on occurence
+    public void StringExpand()
+    {
+        String s="a3b2c2d4"; String s1="";
+        for(int i=0;i<s.length();i++)
+        {
+            char ch=s.charAt(i);
+            if(Character.isAlphabetic(ch))
+            {
+                char ch1=s.charAt(i+1);
+                int count= Character.getNumericValue(ch1);
+                for(int j=0;j<count;j++)
+                {
+                   s1=s1+ch;
+                }
+            }
+        }
+        System.out.println(s1);
+
+    }
+Output: aaabbccdddd
