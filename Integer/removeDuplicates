@@ -1,0 +1,23 @@
+@Test
+    //remove duplicates in array
+    public void removeDuplicates() {
+        int[] arr = {4, 2, 3, 5, 1, 2, 4};
+
+Method1:
+
+        
+        Set<Integer> li = new HashSet<>();
+        for (int i = 0; i < arr.length; i++) {
+            li.add(arr[i]);
+                }
+        System.out.println(li);
+Method2:
+List<Integer> li = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            int index = li.indexOf(arr[i]);  //to check whether value is present or not
+            if (index == -1) {
+                li.add(arr[i]);
+            }
+
+        }
+Output:[4, 2, 3, 5, 1]
