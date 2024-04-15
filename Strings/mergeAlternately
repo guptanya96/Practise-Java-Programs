@@ -1,0 +1,22 @@
+@Test
+        public void mergeAlternately() {
+            String word1="abc";
+            String word2="pqrs";
+            StringBuilder sb= new StringBuilder();
+            int min =Math.min(word1.length(),word2.length());
+            for(int i=0;i<min;i++)
+            {
+                sb.append(word1.charAt(i));
+                sb.append(word2.charAt(i));
+            }
+            if(word1.length()>min)
+            {
+                sb.append(word1.substring(min,word1.length()));
+            }
+            if(word2.length()>min)
+            {
+                sb.append(word2.substring(min,word2.length()));
+            }
+            System.out.println(sb);
+        }
+Output: apbqcrs
