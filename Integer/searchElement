@@ -1,0 +1,16 @@
+ @Test
+    //linear search
+    public void searchElement() {
+        int a[] = {10, 20, 30, 40, 50};
+        int search = 5;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == search) {
+                System.out.println("Element found");
+                break;
+            } else {
+                System.out.println("Element Not found");
+                continue;
+            }
+        }
+    }
+Output:Element Not found
