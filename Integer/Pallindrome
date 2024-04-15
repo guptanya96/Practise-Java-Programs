@@ -1,0 +1,23 @@
+ @Test
+    //pallindrome number
+    public void pallindromCheck()
+    {
+        int x=32; int temp=0; int a=x;
+        while(a>0)
+        {
+            int q=a%10;
+            temp=(temp*10)+q;
+            a=a/10;
+        }
+        if(temp==x)
+        {
+            System.out.println("Pallindrome");
+        }
+        else
+        {
+            System.out.println("Not Pallindrome");
+        }
+
+    }
+
+Output:Not Pallindrome
