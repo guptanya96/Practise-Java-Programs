@@ -1,0 +1,22 @@
+@Test
+    //check for armstrong
+    public void armstrongCheck()
+    {
+        int x=153;int r,s=0;
+        int a=x;
+        while (a!=0)
+        {
+            r=x%10;
+            a=a/10;
+            s=s+(r*r*r);
+        }
+        if(s==x)
+        {
+            System.out.print("Number is armstrong");
+        }
+        else {
+            System.out.print("Number is not armstrong");
+        }
+    }
+
+Output:Number is not armstrong
