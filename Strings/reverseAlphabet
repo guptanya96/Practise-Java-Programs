@@ -1,0 +1,24 @@
+@Test
+    
+    public void reverseAlphabet()
+    {
+//extract string and print it in reverse without reversing integers
+        String s="test12naveen32";
+        String s1="";
+        for(int i =0;i<s.length();i++)
+        {
+            char ch=s.charAt(i);
+            if(Character.isAlphabetic(ch))
+            {
+                s1=ch+s1;
+                }
+            else if(Character.isDigit(ch))
+            {
+                s1=s1+ch;
+            }
+
+        }
+        System.out.print(s1);
+
+    }
+Output:neevantset1232
