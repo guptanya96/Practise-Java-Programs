@@ -1,0 +1,16 @@
+  @Test
+    //find missing number
+    public void missNum() {
+        int a[] = {1, 2, 3, 5};
+        int miss = 0;
+        int len = a.length + 1;
+        int sum = len * (len + 1) / 2;
+        for (int i = 0; i < a.length; i++) {
+            miss = miss + a[i];
+        }
+        int num = sum - miss;
+        System.out.print("Missing number: " + num);
+
+    }
+
+Output:Missing number: 4
