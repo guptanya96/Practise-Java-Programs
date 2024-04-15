@@ -1,0 +1,29 @@
+  @Test
+    //move 0 to end
+    public void MoveZerosToEnd() {
+        int[] inputArray = {1, 2, 3, 0, 5, 0, 4, 0, 8};
+
+        List<Integer> li = new ArrayList<>();
+        int count = 0;
+        for (int i = 0; i < inputArray.length; i++) {
+            if (inputArray[i] == 0) {
+                count++;
+            } else {
+                li.add(inputArray[i]);
+            }
+        }
+        for (int j = 0; j < count; j++) {
+            li.add(0);
+        }
+        System.out.print(li);
+
+
+
+        System.out.print("Reversing the array : ");
+        Collections.sort(li, Collections.reverseOrder());
+        System.out.print(li);
+
+}
+
+Output: [1, 2, 3, 5, 4, 8, 0, 0, 0]
+
