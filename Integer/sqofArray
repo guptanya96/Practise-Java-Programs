@@ -1,0 +1,11 @@
+@Test
+    // squares of a sorted array
+    public void sqofArray() {
+        int inputArray[] = {-1,0,1,2};
+        for(int i=0;i<inputArray.length;i++)
+        {
+            inputArray[i]=inputArray[i]*inputArray[i];
+            System.out.print(inputArray[i]+" ");
+        }
+    }
+Output:1 0 1 4 
