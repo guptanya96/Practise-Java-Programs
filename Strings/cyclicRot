@@ -1,0 +1,17 @@
+@Test
+    public void rot()
+    {
+        String a="ABCD";
+        String b="CDAB";
+        String c=a+a;
+        if(c.contains(b))
+        {
+            System.out.print("ROtation possible");
+        }
+        else {
+            System.out.print("No rotation");
+        }
+
+    }
+
+Output: ROtation possible
