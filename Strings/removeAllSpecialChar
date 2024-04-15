@@ -1,0 +1,16 @@
+  @Test
+    //remove all special characters
+    public void removeAllSpecialChar()
+        {
+            String s="@@$$%%%'';;/./ Sele23nium".replaceAll("//s","");
+            char []c = s.toCharArray();
+            for(int i=0;i<c.length;i++)
+            {
+                if(Character.isDigit(c[i])||Character.isAlphabetic(c[i]))
+                {
+                    System.out.print(c[i]);
+                }
+            }
+        }
+
+Output: Sele23nium
