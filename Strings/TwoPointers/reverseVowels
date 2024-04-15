@@ -1,0 +1,27 @@
+@Test
+       
+       public void reverseVowels() {
+           String s="leetcode";
+           char ch[]= s.toCharArray(); String newStr="aeiouAEIOU";
+           int start=0; int end=s.length()-1;
+           while(start<end)
+           {
+               if(newStr.indexOf(ch[start])==-1)
+               {
+                   start++; }
+               if(newStr.indexOf(ch[end])==-1)
+               {end--; }
+               else
+               {
+                   char temp = ch[start];
+                   ch[start] = ch[end];
+                   ch[end] = temp;
+                   start++;
+                   end--;
+               }
+           }
+           String s1 = String.valueOf(ch);
+           System.out.println(s1);
+       }
+
+Output:leotcede
