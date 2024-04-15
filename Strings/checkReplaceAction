@@ -1,0 +1,7 @@
+@Test
+    public void checkReplaceAction()
+    {
+        String name= "hello my name is tanya";
+        System.out.println(name.replace(" ",""));
+    }
+Output: hellomynameistanya
