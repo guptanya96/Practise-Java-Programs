@@ -1,0 +1,12 @@
+@Test
+    //exchange string without third variable
+    public void exchange()
+    {
+        String s="hello", s1="tanya";
+        s= s.concat(s1);
+        s1=s.substring(0,5);
+        s=s.substring(5,10);
+        System.out.println(s+" "+s1);
+    }
+
+Output: tanya hello
