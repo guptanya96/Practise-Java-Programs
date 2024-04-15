@@ -1,0 +1,17 @@
+ @Test
+    //print words with even count
+    public void evenCount()
+    {
+        String s[] = "Java I am testing this program".split(" ");
+
+        for(int i=0;i< s.length;i++)
+        {
+            if(s[i].length()%2==0)
+            {
+                System.out.println(s[i]);
+            }
+        }
+    
+Output: Java
+am
+this
