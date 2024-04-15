@@ -1,0 +1,12 @@
+@Test
+    // sum of elements in array
+    public void sumArray() {
+        int array[] = {5, 2, 3, 7, 8};
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum = sum + array[i];
+        }
+        System.out.print("Sum of elements : " + sum);
+    }
+
+Output:Sum of elements : 25
