@@ -1,0 +1,17 @@
+@Test
+    //Product of Array Except Self
+    public void product()
+    {
+        int nums[] = {1,2,3,4}; int product=1;
+        int output[]= new int[nums.length];
+        for(int i =0;i<nums.length;i++)
+        {
+            product = product*nums[i];
+        }
+        for(int i=0;i< nums.length;i++)
+        {
+            output[i]=product/nums[i];
+            System.out.print(output[i]+" , ");
+        }
+
+Output:24 , 12 , 8 , 6 , 
