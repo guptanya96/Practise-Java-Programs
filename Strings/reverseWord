@@ -1,0 +1,14 @@
+ @Test
+    //reverse each word in string
+    public void reverseWord()
+        {
+            String s[]="hello my name is tanya".split(" ");
+            String s1="";
+            for(int i=s.length-1;i>=0;i--)
+            {
+                s1=s1+s[i]+" ";
+
+            }
+            System.out.println(s1);
+    }
+Output: tanya is name my hello 
