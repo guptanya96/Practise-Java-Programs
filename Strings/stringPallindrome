@@ -1,0 +1,23 @@
+ @Test
+    //string palindrome
+    public void stringPallindrome()
+    {
+        String s="naman";
+        char[] ch= s.toCharArray(); String rev="";
+        for(int i= ch.length-1;i>=0;i--)
+        {
+            rev=rev+ch[i];
+        }
+        System.out.println("Reverse: "+rev);
+        if(s.equals(rev))
+        {
+            System.out.print("Pallindrome");
+        }
+        else
+        {
+            System.out.print("Not Pallindrome");
+        }
+    }
+
+Output: Reverse: naman
+Pallindrome
