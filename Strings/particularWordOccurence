@@ -1,0 +1,16 @@
+ @Test
+    //count particular word occurence
+    public void particularWordOccurence()
+    {
+        String s[]= "hello my name is tanya and hello is my greeting is".split(" ");
+        int count=0; String check="my";
+        for(int i=0;i<s.length;i++)
+        {
+            if(check.equals(s[i]))
+            {
+                count++;
+            }
+        }
+        System.out.println("Occurence of "+check+" is : "+count);
+    }
+Output: Occurence of my is : 2
