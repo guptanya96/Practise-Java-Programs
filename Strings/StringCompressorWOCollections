@@ -1,0 +1,32 @@
+//String compression Improved version without using collections
+import java.util.*;
+
+public class StringCompressor {
+    public static void main(String[] args) {
+        String input = "aabcccda";
+        
+        StringBuilder compressed = new StringBuilder();
+        char currentChar = input.charAt(0);
+        int count = 1;
+        
+        for (int i = 1; i < input.length(); i++) {
+            char nextChar = input.charAt(i);
+            if (nextChar == currentChar) {
+                count++;
+            } else {
+                compressed.append(currentChar);
+                compressed.append(count);
+                currentChar = nextChar;
+                count = 1;
+            }
+        }
+        
+        // Append the last character and its count
+        compressed.append(currentChar);
+        compressed.append(count);
+   
+        System.out.println("Compressed string: " + compressed);
+    }
+}
+
+//Output: Compressed string: a2b1c3d1a1
