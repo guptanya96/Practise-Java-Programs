@@ -1,0 +1,9 @@
+//Remove all special chars and retain only alphabetical and numerical values using regex
+
+public void replaceSpecialChars()
+    {
+        String s="hello$#%ed243@".replaceAll("[^a-zA-Z0-9]","");
+        System.out.println(s);
+    }
+
+//Output: helloed243
